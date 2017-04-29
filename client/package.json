@@ -6,6 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack src/js/app.js dist/bundle.js",
+    "build:serve": "webpack-dev-server --entry ./src/js/app.js --output-filename ./dist/bundle.js",
     "build:prod": "webpack src/js/app.js dist/bundle.js -p"
   },
   "repository": {
@@ -15,7 +16,8 @@
   "author": "Alonso Calle",
   "license": "MIT",
   "devDependencies": {
-    "webpack": "^2.4.1"
+    "webpack": "^2.4.1",
+    "webpack-dev-server": "^2.4.5"
   },
   "dependencies": {
     "vue-material": "^0.7.1"
